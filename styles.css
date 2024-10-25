@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:grayscale#f4f4f4;
+}
+
+header {
+    background-color:#333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: wrap;
+    box-sizing: border-box;
+    color: rgb(10, 162, 112)
+}
+
+.marquee span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    font-size: 20px;
+    color:rgb(235, 59, 59)
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    color:aliceblue;
+    background-color: #0b0909;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative; /* Required for the animation */
+    animation: movePhoto 5s linear infinite; /* Animation applied */
+   
+}
+
+@keyframes movePhoto {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(100px); /* Move to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to start position */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#bouncing-text {
+    text-align: center;
+    margin: 20px;
+}
+
+#bouncing-text {
+    text-align: center;
+    margin: 20px;
+    padding: 20px; /* Add padding to the section */
+    background-color: rgb(226, 43, 89); /* Set the background color for the whole section */
+}
+
+.bounce {
+    display: inline-block; /* Keep this as inline-block to allow the animation */
+    font-size: 24px;
+    font-weight: bold; /* Changed from 'algerian' to 'bold' as 'algerian' is not a valid value */
+    animation: bounce 5s infinite;
+    color: yellow;
+    /* Removed background-color from here */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.Experience-and-Projects{
+    display: inline-block;
+    background-color: rgb(183, 30, 104);
+    color:rgb(235, 59, 59);
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+}
+.hero-btn {
+    position: center;
+    z-index: 4;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #c482823f;
+    background-color: rgb(19, 152, 234);
+    border: 3px solid #49b0e8;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
