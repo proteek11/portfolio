@@ -1,169 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio of Proteek Jana</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Inline CSS for quick styling of the passport photo */
-        .passport-photo {
-            width: 100px; /* Set width for passport size */
-            height: 100px; /* Set height for passport size */
-            border-radius: 50%; /* Optional: Make it circular */
-            object-fit: cover; /* Maintain aspect ratio */
-            margin: 20px; /* Add some margin for spacing */
-        }
+      /* Inline CSS for quick styling of the passport photo */
+      .passport-photo {
+        width: 100px; /* Set width for passport size */
+        height: 100px; /* Set height for passport size */
+        border-radius: 50%; /* Optional: Make it circular */
+        object-fit: cover; /* Maintain aspect ratio */
+        margin: 20px; /* Add some margin for spacing */
+      }
 
-        /* Container for the header section */
-        .header-section {
-            background-color: rgb(47, 47, 10); /* Yellow background for the header section */
-            padding: 20px; /* Padding around the header */
-            border-radius: 10px; /* Rounded corners */
-        }
+      /* Container for the header section */
+      .header-section {
+        background-color: rgb(
+          47,
+          47,
+          10
+        ); /* Yellow background for the header section */
+        padding: 20px; /* Padding around the header */
+        border-radius: 10px; /* Rounded corners */
+      }
 
-        /* Container for the photo and navigation links */
-        .header-container {
-            display: flex; /* Use flexbox for layout */
-            justify-content: space-between; /* Space between elements */
-            align-items: center; /* Center vertically */
-        }
+      /* Container for the photo and navigation links */
+      .header-container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space between elements */
+        align-items: center; /* Center vertically */
+      }
 
-        /* Navigation links styling */
-        .nav-links {
-            display: flex; /* Use flexbox for navigation links */
-            justify-content: flex-end; /* Align links to the right */
-            align-items: center; /* Center vertically */
-        }
+      /* Navigation links styling */
+      .nav-links {
+        display: flex; /* Use flexbox for navigation links */
+        justify-content: flex-end; /* Align links to the right */
+        align-items: center; /* Center vertically */
+      }
 
-        .nav-links a {
-            margin: 0 15px; /* Space between links */
-            text-decoration: none; /* Remove underline */
-            color: rgb(7, 7, 149); /* Link color */
-            font-weight: bold; /* Bold text */
-        }
+      .nav-links a {
+        margin: 0 15px; /* Space between links */
+        text-decoration: none; /* Remove underline */
+        color: rgb(7, 7, 149); /* Link color */
+        font-weight: bold; /* Bold text */
+      }
 
-        .nav-links a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
+      .nav-links a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
 
-        /* Section styling */
-        section {
-            margin-top: 20px; /* Space above sections */
-        }
+      /* Section styling */
+      section {
+        margin-top: 20px; /* Space above sections */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section with Yellow Background -->
     <div class="header-section">
-        <!-- Header Container with Passport Photo and Navigation Links -->
-        <div class="header-container">
-            <!-- Passport Size Photo -->
-            <img src="./PASSPORT SIZE.jpg" alt="Proteek Jana" class="passport-photo">
+      <!-- Header Container with Passport Photo and Navigation Links -->
+      <div class="header-container">
+        <!-- Passport Size Photo -->
+        <img
+          src="./PASSPORT SIZE.jpg"
+          alt="Proteek Jana"
+          class="passport-photo"
+        />
 
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience and Projects</a> <!-- New Link -->
-            </div>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience and Projects</a>
+          <!-- New Link -->
         </div>
+      </div>
     </div>
-        <section>
-            <h2>Download My Resume</h2>
-            <p>If you'd like to learn more about my experience and skills, you can download my resume using the link below:</p>
-           <a href="./Resume-Proteek.pdf" class="hero-btn" id="hero-resume" download="">
-                <span class="btn-heading">Download CV</span>
-                <span class="btn-bg"></span>
-           </a>
-        </section>
+    <section>
+      <h2>Download My Resume</h2>
+      <p>
+        If you'd like to learn more about my experience and skills, you can
+        download my resume using the link below:
+      </p>
+      <a
+        href="./Resume-Proteek.pdf"
+        class="hero-btn"
+        id="hero-resume"
+        download=""
+      >
+        <span class="btn-heading">Download CV</span>
+        <span class="btn-bg"></span>
+      </a>
+    </section>
 
     <section class="marquee">
-        <p>
-            <span class="fixed-text">I'm a </span>
-            <span class="animated-text">
-                <span class="text-item">Data Scientist</span>
-                <span class="text-item">Coder</span>
-                <span class="text-item">Full Stack Developer</span>
-            </span>
-        </p>
+      <p>
+        <span class="fixed-text">I'm a </span>
+        <span class="animated-text">
+          <!-- <span class="text-item">Data Scientist</span> -->
+          <span class="text-item">Coder</span>
+          <span class="text-item">Full Stack Developer</span>
+        </span>
+      </p>
     </section>
-    
+
     <section id="bouncing-text">
-        <h2></h2>
-        <div class="bounce">
-            <p>Welcome to My Portfolio!</p>
-        </div>
+      <h2></h2>
+      <div class="bounce">
+        <p>Welcome to My Portfolio!</p>
+      </div>
     </section>
-    
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate developer with experience in various technologies. I love solving problems and building innovative solutions.</p>
-        <img src="./bikee.jpg"alt="Proteek Jana" class="profile-photo">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio! I am a passionate developer with experience in
+        various technologies. I love solving problems and building innovative
+        solutions.
+      </p>
+      <img src="./bikee.jpg" alt="Proteek Jana" class="profile-photo" />
     </section>
 
     <section id="experience" class="experience-projects">
-        <h3>Experience and Projects</h3>
-        
-            <li>
-                <span style="font-weight: bold; background-color: rgb(57, 57, 45);">Completed internship on Internet of Things and Embedded Systems | Jadavpur University | Jadavpur</span>
-                <ul>
-                    <li style="margin-bottom: 10px;">Gained hands-on experience in various software programs, increasing proficiency and expanding technical skill set. </li>
-                    <li style="margin-bottom: 10px;">Developed organizational skills through managing multiple tasks simultaneously while adhering to strict deadlines.</li>
-                    <li style="margin-bottom: 10px;">Prepared project presentations and reports.</li>
-                </ul>
-            </li>
-            <li>
-                <span style="font-weight: bold; background-color: rgb(57, 57, 45);">Data Science Intern | Acmegrade</span>
-                <ul>
-                    <li style="margin-bottom: 10px;">Implemented data visualization techniques to effectively communicate insights to stakeholders.</li>
-                    <li style="margin-bottom: 10px;">Utilized programming languages such as Python using Anaconda and VS Code extensively throughout the internship, applying relevant libraries and frameworks when appropriate.</li>
-                    <li style="margin-bottom: 10px;"> Performed advanced data extraction and data manipulation.</li>
-                </ul>
-            </li>
-            <li>
-                <span style="font-weight: bold; background-color: rgb(57, 57, 45);">Component Development System (CDS)</span>
-                <ul>
-                    <li style="margin-bottom: 10px;">Developed a comprehensive Trainer Kit Key which includes a 1 Hz clock using a 555 timer and setting up a voltage regulator.</li>
-                </ul>
-            </li>
+      <h3>Experience and Projects</h3>
+
+      <li>
+        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+          >Completed internship on Internet of Things and Embedded Systems |
+          Jadavpur University | Jadavpur</span
+        >
+        <ul>
+          <li style="margin-bottom: 10px">
+            Gained hands-on experience in various software programs, increasing
+            proficiency and expanding technical skill set.
+          </li>
+          <li style="margin-bottom: 10px">
+            Developed organizational skills through managing multiple tasks
+            simultaneously while adhering to strict deadlines.
+          </li>
+          <li style="margin-bottom: 10px">
+            Prepared project presentations and reports.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+          >Data Science Intern | Acmegrade</span
+        >
+        <ul>
+          <li style="margin-bottom: 10px">
+            Utilized programming languages such as Python using Anaconda and VS
+            Code extensively throughout the internship, applying relevant
+            libraries and frameworks when appropriate.
+          </li>
+          <li style="margin-bottom: 10px">
+            Performed advanced data extraction and data manipulation.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+          >Component Development System (CDS)</span
+        >
+        <ul>
+          <li style="margin-bottom: 10px">
+            Developed a comprehensive Trainer Kit Key which includes a 1 Hz
+            clock using a 555 timer and setting up a voltage regulator.
+          </li>
+        </ul>
+      </li>
     </section>
     <section id="certification">
-        <h3><span style="font-weight: bold; background-color: rgb(66, 66, 29);">CERTIFICATION</span></h3>
-            
-                <ul>Python : Completed python workshop from basics to moderate.</ul>
-                <ul>TPSDI : Participated in solar PV System Familiarization by TATA.</ul>
-                <ul>Certificate for the completion of RDBMS PostgreSQL Training by IIT Bombay</ul>
+      <h3>
+        <span style="font-weight: bold; background-color: rgb(66, 66, 29)"
+          >CERTIFICATION</span
+        >
+      </h3>
 
- 
-
-
+      <ul>
+        Python : Completed python workshop from basics to moderate.
+      </ul>
+      <ul>
+        TPSDI : Participated in solar PV System Familiarization by TATA.
+      </ul>
+      <ul>
+        Certificate for the completion of RDBMS PostgreSQL Training by IIT
+        Bombay
+      </ul>
     </section>
-    
+
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <div class="marquee">
-                <ul>
-                <li style="margin-bottom: 10px";>Languages - C,C++,Python, HTML, SQL </li>
-                <li style="margin-bottom: 10px";>Data Scientist</li>
-                <li style="margin-bottom: 10px";>Technology- Smart Door Lock System, Certificate Tampering Detector</li>
-                <li style="margin-bottom: 10px";>Full Stack</li>
-                <li style="margin-bottom: 10px";>Web Development</li>
-                <li style="margin-bottom: 10px";>Coding</li>
-                <li style="margin-bottom: 10px";>Soft Skills- Leadership, Writing Skills, Public Speaking, Time Management</li>
-                <li style="margin-bottom: 10px";>Verilog</li>
-            </ul>
-            </div>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <div class="marquee">
+          <ul>
+            <li style="margin-bottom: 10px" ;>
+              Languages - C,C++,Python, HTML, SQL
+            </li>
+            <li style="margin-bottom: 10px" ;>Data Scientist</li>
+            <li style="margin-bottom: 10px" ;>
+              Technology- Smart Door Lock System, Certificate Tampering Detector
+            </li>
+            <li style="margin-bottom: 10px" ;>Full Stack</li>
+            <li style="margin-bottom: 10px" ;>Web Development</li>
+            <li style="margin-bottom: 10px" ;>Coding</li>
+            <li style="margin-bottom: 10px" ;>
+              Soft Skills- Leadership, Writing Skills, Public Speaking, Time
+              Management
+            </li>
+            <li style="margin-bottom: 10px" ;>Verilog</li>
+          </ul>
+        </div>
+      </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Proteek Jana. All rights reserved.</p>
-        <p>  winki.pinki11@gmail.com</p>
-        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LINKEDIN</a>
+      <p>&copy; 2024 Proteek Jana. All rights reserved.</p>
+      <p>winki.pinki11@gmail.com</p>
+      <a
+        href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+        >LINKEDIN</a
+      >
     </footer>
-</body>
+  </body>
 </html>
-
