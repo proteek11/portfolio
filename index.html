@@ -14,6 +14,11 @@
         object-fit: cover; /* Maintain aspect ratio */
         margin: 20px; /* Add some margin for spacing */
       }
+      .name {
+        font-size: 24px; /* Font size for the name */
+        color: white; /* Text color */
+        align-self: left; /* Center vertically */
+      }
 
       /* Container for the header section */
       .header-section {
@@ -43,7 +48,7 @@
       .nav-links a {
         margin: 0 15px; /* Space between links */
         text-decoration: none; /* Remove underline */
-        color: rgb(7, 7, 149); /* Link color */
+        color: rgb(51, 51, 242); /* Link color */
         font-weight: bold; /* Bold text */
       }
 
@@ -67,7 +72,9 @@
           src="./PASSPORT SIZE.jpg"
           alt="Proteek Jana"
           class="passport-photo"
+
         />
+        <span class="name" align="left">PROTEEK JANA</span>
 
         <!-- Navigation Links -->
         <div class="nav-links">
@@ -79,32 +86,62 @@
       </div>
     </div>
     <section>
-      <h2>Download My Resume</h2>
+      <h2><span style="color: red;"></span>Download My Resume</h2>
       <p>
-        If you'd like to learn more about my experience and skills, you can
-        download my resume using the link below:
+          If you'd like to learn more about my experience and skills, you can
+          download my resume using the link below:
       </p>
       <a
-        href="./Resume-Proteek.pdf"
-        class="hero-btn"
-        id="hero-resume"
-        download=""
+          href="./Resume-Proteek.pdf"
+          class="hero-botn"
+          id="hero-resume"
+          download=""
+          style="
+              display: inline-block;
+              width: 150px; /* Set width for rectangular appearance */
+              height: 50px; /* Set height for rectangular appearance */
+              border-radius: 10px; /* Makes the corners rounded */
+              background-color: #831515; /* Initial background color */
+              color: rgb(230, 231, 248); /* Text color */
+              text-align: center; /* Center the text */
+              line-height: 50px; /* Vertically center the text */
+              text-decoration: none; /* Remove underline */
+              transition: background-color 0.3s; /* Smooth transition for background color */
+          "
+          onmouseover="this.style.backgroundColor='#45a049';"
+          onmouseout="this.style.backgroundColor='#4CAF50';"
       >
-        <span class="btn-heading">Download CV</span>
-        <span class="btn-bg"></span>
+          <span style="background-color: rgb(34, 2, 4); padding: 15px; border-radius: 1000px;class="btn-heading">Download CV</span>
+          <span class="btn-bg"></span>
       </a>
-    </section>
+  </section>
 
-    <section class="marquee">
-      <p>
-        <span class="fixed-text">I'm a </span>
-        <span class="animated-text">
-          <span class="text-item">Data Scientist</span>
-          <span class="text-item">Coder</span>
-          <span class="text-item">Full Stack Developer</span>
+    <section class="marquee" style="position: relative; width: 100%; height: 50px; overflow: hidden;background-color:aliceblue">
+      <p style="margin: 0; position: absolute; white-space: nowrap; font-size: 24px;">
+        <span class="fixed-text" style="font-weight: bold;">I'm a </span>
+        <span class="animated-text" style="display: inline-block;font-weight: bold; animation: slice 6s infinite;">
+          <span class="text-item" style="display: inline-block;color:crimson; padding: 0 20px;">Data Scientist</span>
+          <span class="text-item" style="display: inline-block;color:crimson; padding: 0 20px;">Coder</span>
+          <span class="text-item" style="display: inline-block;color:crimson; padding: 0 20px;">Full Stack Developer</span>
         </span>
       </p>
     </section>
+    
+    <style>
+      /* Extend the width of the section */
+      .marquee {
+        width: 150%; /* Adjust this value to extend the width */
+      }
+    
+      @keyframes slice {
+        0% { transform: translateX(100%); opacity: 0; }
+        10% { opacity: 1; }
+        20% { transform: translateX(0); }
+        80% { transform: translateX(0); }
+        90% { opacity: 0; }
+        100% { transform: translateX(100%); opacity: 0; }
+      }
+    </style>
 
     <section id="bouncing-text">
       <h2></h2>
@@ -113,9 +150,8 @@
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
+      <h2 align="center" class="italic">About Me</h2>
+      <p align="center">
         Welcome to my portfolio! I am a passionate developer with experience in
         various technologies. I love solving problems and building innovative
         solutions.
@@ -123,11 +159,11 @@
       <img src="./bikee.jpg" alt="Proteek Jana" class="profile-photo" />
     </section>
 
-    <section id="experience" class="experience-projects">
-      <h3>Experience and Projects</h3>
+    <section id="experience" class="experience-projects" >
+      <h3 background-color="green">Experience and Projects</h3>
 
       <li>
-        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+        <span style="font-weight: bold  ; background-color: rgb(32, 122, 119)"
           >Completed internship on Internet of Things and Embedded Systems |
           Jadavpur University | Jadavpur</span
         >
@@ -146,7 +182,7 @@
         </ul>
       </li>
       <li>
-        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+        <span style="font-weight: bold; background-color: rgb(32, 122, 119)"
           >Data Science Intern | Acmegrade</span
         >
         <ul>
@@ -164,7 +200,7 @@
         </ul>
       </li>
       <li>
-        <span style="font-weight: bold; background-color: rgb(57, 57, 45)"
+        <span style="font-weight: bold; background-color: rgb(32, 122, 119)"
           >Component Development System (CDS)</span
         >
         <ul>
@@ -177,19 +213,19 @@
     </section>
     <section id="certification">
       <h3>
-        <span style="font-weight: bold; background-color: rgb(66, 66, 29)"
+        <span style="font-weight: bold;"
           >CERTIFICATION</span
         >
       </h3>
 
       <ul>
-        Python : Completed python workshop from basics to moderate.
+      <span style="background-color: rgb(32, 122, 119); padding: 2px; border-radius: 3px;">Python</span> : Completed python workshop from basics to moderate.
       </ul>
       <ul>
-        TPSDI : Participated in solar PV System Familiarization by TATA.
+      <span style="background-color: rgb(32, 122, 119); padding: 2px; border-radius: 3px;" >TPSDI</span> : Participated in solar PV System Familiarization by TATA.
       </ul>
       <ul>
-        Certificate for the completion of RDBMS PostgreSQL Training by IIT
+        Certificate for the completion of <span style="background-color: rgb(32, 122, 119); padding: 2px; border-radius: 3px;" >RDBMS PostgreSQL</span>  Training by IIT
         Bombay
       </ul>
     </section>
