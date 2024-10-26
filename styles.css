@@ -1,13 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color:grayscale#f4f4f4;
-}
+
+    body {
+        background-color: rgb(57, 66, 66); /* Set the background color to black */
+        color: rgb(250, 244, 244); /* Optional: Set text color to white for better contrast */
+    }
+
 
 header {
-    background-color:#333;
-    color: #fff;
+    background-color:#753c3c;
+    color: #5c5cf9;
     padding: 50px;
     text-align: center;
 }
@@ -16,7 +16,7 @@ header {
     overflow: hidden;
     white-space: wrap;
     box-sizing: border-box;
-    color: rgb(10, 162, 112)
+    color: rgb(14, 255, 175)
 }
 
 .marquee span {
@@ -34,10 +34,10 @@ header {
 section {
     padding: 20px;
     margin: 20px;
-    color:aliceblue;
-    background-color: #0b0909;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:rgb(13, 197, 238);
+    background-color: #085370;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(74, 81, 225, 0.1);
 }
 
 .profile-photo {
@@ -66,7 +66,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
-    color: #fff;
+    color: #888a8d;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -115,11 +115,16 @@ footer {
     position: center;
     z-index: 4;
     padding: 0.8rem 2.3rem;
-    box-shadow: 5px 5px 7px 0px #c482823f;
-    background-color: rgb(19, 152, 234);
-    border: 3px solid #49b0e8;
+    box-shadow: 5px 5px 7px 0px #f910103f;
+    background-color: rgb(8, 48, 72);
+    border: 3px solid #093e5b;
     font-size: 18px;
     font-weight: 500;
     color: white;
     cursor: pointer;
 }
+.italic 
+{
+    font-style: italic; /* Italic text
+}
+    
